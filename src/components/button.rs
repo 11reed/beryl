@@ -24,8 +24,8 @@ pub fn container(props: &Props) -> Html {
     .try_text(props.align.clone());
     
     html! {
-        <div class="button" style={ style.to_string() }>
+        <button class="button" style={ style.to_string() }>
             { props.children.clone() }
-        </div>
+        </button>
     }
 }
